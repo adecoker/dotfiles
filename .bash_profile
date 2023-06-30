@@ -34,8 +34,7 @@ print_before_the_prompt () {
 }
 
 PROMPT_COMMAND=print_before_the_prompt
-PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
-PS1="$EMOJI >"
+PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"PS1="$EMOJI >"
 
 fortune | cowsay -f tux
 
